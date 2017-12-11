@@ -2,12 +2,6 @@ from flask import Flask, render_template, url_for, redirect, request, jsonify, m
 import requests
 app = Flask(__name__)
 
-
-@app.route('/home')
-def helloWorld():
-	nam = {'name':'Venkat'}
-	return render_template('home.html',user=nam)
-
 @app.route('/authors')
 def getAuthorsPosts():
 	author_url = 'https://jsonplaceholder.typicode.com/users'
@@ -42,7 +36,7 @@ def setCookie():
 		return redirect(url_for('setcookie'))
 	
 @app.route('/getcookie')
-def getCookie():
+def getCookies():
 	name = request.cookies.get('name')
 	age = request.cookies.get('age')
 	return '<h3>Name is: </h>' +name + '<br><h3>Age is: </h>' + age
@@ -68,7 +62,7 @@ def logData():
 	
 @app.route('/')
 def index():
-    return "Hi there! Checkout 'readme.txt.'"
+    return "Hello World - Venkat"
 
 if __name__ == "__main__":
     app.run(debug='true')
