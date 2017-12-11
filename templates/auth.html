@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+	<h1>LIST OF AUTHORS</h1>
+	{% for author in list %}			
+	    <p>Hi {{author.name}}, you have {{author.posts}} posts.</p>
+	{% endfor %}
+    </body>
+
+</html>
