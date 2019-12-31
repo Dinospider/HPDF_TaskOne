@@ -1,14 +1,17 @@
-# HPDF_AssignmentOne
+# Hasura Product Development Fellowship (HPDF)
 HPDF - Task One
 
-Project based on Python - Flask framework. Purpose of the project is to execute basic back-end functionalities.
+Project based on Python - Flask framework. Purpose of the project is to learn and execute basic back-end functionalities.
 
 __init__.py       : Main file containing routes to web application
 
 Templates folder  : Contains all html files used for the webapp
 
-To start, run 'Python __init__.py'(for Windows) from a flask environment.
-The webapp will then run on the machine.
+To start, clone the repo and setup flask (if necessary).  
+How to: https://flask.palletsprojects.com/en/1.1.x/installation/
+
+Then run 'python __init__.py' from a flask environment.
+The webapp should then run on the machine.
 
 The web pages accessible are:
 
@@ -24,6 +27,7 @@ The web pages accessible are:
 
 ->http://localhost:5000/html : Renders a HTML page
 
-->http://localhost:5000/input : Receives input from user and logs it to console
+->http://localhost:5000/input : Receives input from user and logs it to console  
+
 
 Note: http://localhost:5000/ is just a sample, it may run on any other port.
